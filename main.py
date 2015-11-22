@@ -404,12 +404,12 @@ def gravity(position, velocity):
                     deltaX = position[j,0] - position[i,0]
                     deltaY = position[j,1] - position[i,1]
                     
-                    k1X = dt * -G * mDistribution[j] * deltaX / ((np.sqrt(deltaX**2 + deltaY**2))**3)
+                    k1X = -dt * G * mDistribution[j] * deltaX / ((np.sqrt(deltaX**2 + deltaY**2))**3)
  #                   k2X = dt * -G * mDistribution[j] * (deltaX + 0.5*k1X)/ ((np.sqrt((deltaX + 0.5*k1X)**2 + deltaY**2))**3)
  #                   k3X = dt * -G * mDistribution[j] * (deltaX + 0.5*k2X)/ ((np.sqrt((deltaX + 0.5*k2X)**2 + deltaY**2))**3)
  #                   k4X = dt * -G * mDistribution[j] * (deltaX + k3X)/ ((np.sqrt((deltaX + k3X)**2 + deltaY**2))**3)
                     
-                    k1Y = dt * -G * mDistribution[j] * deltaY / ((np.sqrt(deltaX**2 + deltaY**2))**3)
+                    k1Y = -dt * G * mDistribution[j] * deltaY / ((np.sqrt(deltaX**2 + deltaY**2))**3)
 #                    k2Y = dt * -G * mDistribution[j] * (deltaY + 0.5*k1Y)/ ((np.sqrt((deltaY + 0.5*k1Y)**2 + deltaX**2))**3)
 #                    k3Y = dt * -G * mDistribution[j] * (deltaY + 0.5*k2Y)/ ((np.sqrt((deltaY + 0.5*k2Y)**2 + deltaX**2))**3)
 #                    k4Y = dt * -G * mDistribution[j] * (deltaY + k3Y)/ ((np.sqrt((deltaY + k3Y)**2 + deltaX**2))**3)
