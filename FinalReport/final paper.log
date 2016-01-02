@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  22 DEC 2015 22:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  22 DEC 2015 22:35
 entering extended mode
 **"final paper.tex"
 ("final paper.tex"
@@ -199,44 +199,60 @@ File: 3d_eqb_before.png Graphic file (type png)
  <use 3d_eqb_before.png>
 Package pdftex.def Info: 3d_eqb_before.png used on input line 146.
 (pdftex.def)             Requested size: 289.07999pt x 289.08676pt.
-File: 2d_eqb_after.png Graphic file (type png)
- <use 2d_eqb_after.png>
-Package pdftex.def Info: 2d_eqb_after.png used on input line 153.
-(pdftex.def)             Requested size: 289.07999pt x 299.3882pt.
-File: 2d_eqb_after.png Graphic file (type png)
 
-<use 2d_eqb_after.png>
-Package pdftex.def Info: 2d_eqb_after.png used on input line 153.
-(pdftex.def)             Requested size: 289.07999pt x 299.3882pt.
-File: 2d_eqb_before.png Graphic file (type png)
- <use 2d_eqb_before.png>
-Package pdftex.def Info: 2d_eqb_before.png used on input line 160.
-(pdftex.def)             Requested size: 289.07999pt x 299.3882pt.
-File: 2d_eqb_before.png Graphic file (type png)
- <use 2d_eqb_before.png>
-Package pdftex.def Info: 2d_eqb_before.png used on input line 160.
-(pdftex.def)             Requested size: 289.07999pt x 299.3882pt.
- [6]
-[7 <./2d_eqb_before.png>] [8 <./2d_eqb_after.png>] [9 <./3d_eqb_before.png>]
-[10] [11] ("final paper.aux") ) 
+<3d_eqb_after.png, id=27, 574.145pt x 574.145pt>
+File: 3d_eqb_after.png Graphic file (type png)
+ <use 3d_eqb_after.png>
+Package pdftex.def Info: 3d_eqb_after.png used on input line 153.
+(pdftex.def)             Requested size: 289.07999pt x 289.08676pt.
+File: 3d_eqb_after.png Graphic file (type png)
+
+<use 3d_eqb_after.png>
+Package pdftex.def Info: 3d_eqb_after.png used on input line 153.
+(pdftex.def)             Requested size: 289.07999pt x 289.08676pt.
+ <3d_collision_before.png, id=28, 574.145pt x 574.145pt>
+File: 3d_collision_before.png Graphic file (type png)
+
+<use 3d_collision_before.png>
+Package pdftex.def Info: 3d_collision_before.png used on input line 160.
+(pdftex.def)             Requested size: 289.07999pt x 289.08676pt.
+File: 3d_collision_before.png Graphic file (type png)
+ <use 3d_collision_before.png>
+Package pdftex.def Info: 3d_collision_before.png used on input line 160.
+(pdftex.def)             Requested size: 289.07999pt x 289.08676pt.
+
+<3d_collision_after.png, id=29, 574.145pt x 574.145pt>
+File: 3d_collision_after.png Graphic file (type png)
+
+<use 3d_collision_after.png>
+Package pdftex.def Info: 3d_collision_after.png used on input line 167.
+(pdftex.def)             Requested size: 289.07999pt x 289.08676pt.
+File: 3d_collision_after.png Graphic file (type png)
+ <use 3d_collision_after.png>
+Package pdftex.def Info: 3d_collision_after.png used on input line 167.
+(pdftex.def)             Requested size: 289.07999pt x 289.08676pt.
+ [6] [7 <./2d_eqb_before.png>] [8 <./2d_eqb_after.png>] [9 <./3d_eqb_before.png
+>] [10 <./3d_eqb_after.png>] [11 <./3d_collision_before.png>] [12 <./3d_collisi
+on_after.png>]
+("final paper.aux") ) 
 Here is how much of TeX's memory you used:
- 1919 strings out of 493673
- 23978 string characters out of 3141518
+ 1934 strings out of 493673
+ 24340 string characters out of 3141518
  89480 words of memory out of 3000000
- 5263 multiletter control sequences out of 15000+200000
+ 5275 multiletter control sequences out of 15000+200000
  11660 words of font info for 43 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 27i,12n,24p,1476b,323s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmsy8.pfb>
-Output written on "final paper.pdf" (11 pages, 217437 bytes).
+ 27i,12n,24p,1476b,325s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.
+pfb>
+Output written on "final paper.pdf" (12 pages, 419154 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
+ 78 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
