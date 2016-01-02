@@ -1,0 +1,114 @@
+\NeedsTeXFormat{LaTeX2e}
+
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+
+% The above lines establish the type of LaTeX you're using, the font and the general
+% type of document (article, book, letter).
+
+
+% Various bold symbols - optional stuff
+\providecommand\bnabla{\boldsymbol{\nabla}}
+\providecommand\bcdot{\boldsymbol{\cdot}}
+\newcommand\etb{\boldsymbol{\eta}}
+
+% For multiletter symbols - optional stuff
+\newcommand\Imag{\mbox{Im}} % cf plain TeX's \Im
+\newcommand\Ai{\mbox{Ai}}            % Airy function
+\newcommand\Bi{\mbox{Bi}}            % Airy function
+
+
+% array strut to make delimiters come out right size both ends
+\newsavebox{\astrutbox}
+\sbox{\astrutbox}{\rule[-5pt]{0pt}{20pt}}
+\newcommand{\astrut}{\usebox{\astrutbox}}
+
+% optional shortcuts defined with \newcommand command
+\newcommand\p{\ensuremath{\partial}}
+\newcommand\tti{\ensuremath{\rightarrow\infty}}
+\newcommand\kgd{\ensuremath{k\gamma d}}
+\newcommand\shalf{\ensuremath{{\scriptstyle\frac{1}{2}}}}
+\newcommand\sh{\ensuremath{^{\shalf}}}
+\newcommand\smh{\ensuremath{^{-\shalf}}}
+\newcommand\squart{\ensuremath{{\textstyle\frac{1}{4}}}}
+\newcommand\thalf{\ensuremath{{\textstyle\frac{1}{2}}}}
+\newcommand\ttz{\ensuremath{\rightarrow 0}}
+\newcommand\ndq{\ensuremath{\frac{\mbox{$\partial$}}{\mbox{$\partial$} n_q}}}
+\newcommand\sumjm{\ensuremath{\sum_{j=1}^{M}}}
+\newcommand\pvi{\ensuremath{\int_0^{\infty}%
+  \mskip \ifCUPmtlplainloaded -30mu\else -33mu\fi -\quad}}
+
+\newcommand\etal{\mbox{\textit{et al.}}}
+\newcommand\etc{etc.\ }
+\newcommand\eg{e.g.\ }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% FOR PDFLATEX:  YOU MAY NEED TO (UN)COMMENT THE FIRST LINE DEPENDING ON YOUR (PDF)LATEX DISTRO
+%\newif\ifpdf\ifx\pdfoutput\undefined\pdffalse\else\pdfoutput=1\pdftrue\fi
+\newcommand{\pdfgraphics}{\ifpdf\DeclareGraphicsExtensions{.pdf,.jpg}\else\fi}
+
+\usepackage{graphicx} % Include figure files
+%\usepackage{epsfig}  % old
+\usepackage{bm}% bold math
+
+\usepackage{amsfonts}
+\newcommand{\field}[1]{\mathbb{#1}}
+\newcommand{\C}{\field{C}}
+\newcommand{\R}{\field{R}}
+
+\def\eg{{e.g.\ }}
+\def\etc{{etc.\ }}
+\def\etal{\mbox{\it et al.\ }}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \linespread{2}  UNCOMMENT this for Double Spacing; I think it looks awful.  Most values work, i.e.. 1.67
+
+% it all starts here
+
+\begin{document}
+
+% \pdfgraphics
+
+\section*{Final Project Proposal - Planetary Collision}  % No Section number because I used \section* not \section
+                                                                           % same thing works for \equation*
+
+\medskip
+\noindent % I tend to begin a document with no indentation ... you decide.
+Sai Chikine \& Alex Rybchuk
+
+\section{Project}  
+Alex Rybchuk$'$s and Sai Chikine$'$s project is the modeling of the collision of two Jovian planets, which was inspired by Chapter 4 of \textbf{Numerical Methods in Astrophysics}. The project aims to model the collision of two gas giant planets similar to Jupiter. These can be approximated as polytropes, which are collections of gas that whose pressure depends only on density. The physics can be modeled using 4 1st order ODEs. Particles are evolved using according to pressure forces and gravitational forces, using a scheme called smoothed particle hydrodynamics, which is essentially a large N-­body simulation additionally taking into account the behavior and properties of gasses. Alex will be taking care of the rudimentary code responsible for the basics of SPH (smoothed particle hydrodynamics), while Sai will handle the improvements to rudimentary code.
+
+\section{Ph 235 Topics}
+The fundamentals to SPH code include the the basic time evolution of particles based on pressure gradients and gravitational gradients. To handle the problem of discretely computed gradients at single points, points are broken up into smoothing kernels that split a single massive particle into a distribution of mass density. Pressure and density are related using a polytropic equation of state, and the gravitational and pressure contributions to each packet of mass can be evolved in time. Improvements to the code make the code more accurate and more computationally efficient. Some of these improvements include: more accurate initial conditions, a better smoothing kernel approach, involving a tree method into computing forces, and using a variable smoothing length. Careful consideration of initial conditions yield more realistic results since a random distribution could lead to large local pressure gradients, which is not physically realistic, while a better kernel would only include force contributions on scales that make sense, instead of summing over all particles in the system, which is computationally inefficient. A tree method of computing will make the code faster by creating larger groups of particles as those particles are further away from the point of interest, resulting in less computations per force calculation. Finally, introducing a variable smoothing length leads to increased computational efficiency by increasing the length scale of force computations for particles that are more isolated than others.
+
+
+\section{Demo \& Deliverables}
+The final demo will consist of an animation of two gas giants colliding with specified initial conditions. The project will also be hosted online through Alex's Github. 
+
+\section{Anticipated Trajectory}
+Expected easy parts of this project will be the way the initial conditions and parameters such as smoothing lengths, time scales, and kernels will be chosen, since methods to do so are clearly explained in the reference textbook. However, considerable research will have to be done as to the way all the physics equations relate to each other, since many are presented with an assumption of previous knowledge by the reader. Computation time and power demand will also be high, due to the large number of particles and calculations per particle. Simpler methods of solving differential equations will likely be used to reduce computation time. If programming the basic rudimentary SPH code turns out to be very difficult, improvements could be cut to focus on getting a working product.
+
+
+\section{Schedule}
+
+\begin{table}[]
+\centering
+\label{my-label}
+\begin{tabular}{ll}
+\textbf{Week Of} & \textbf{Milestone}                 \\
+Nov 13th         & Start rudimentary SPH              \\
+Nov 20th         & Finalize rudimentary SPH           \\
+Nov 27th         & Start fine-tune SPH                \\
+Dec 4th          & Finalize fine-tune SPH             \\
+Dec 11th         & Finalize Demo                      \\
+Dec 18th         & Finalize website and documentation
+\end{tabular}
+\end{table}
+
+\end{document}
